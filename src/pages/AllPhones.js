@@ -35,7 +35,7 @@ function AllPhonesPage() {
   return (
     <div>
       <h1>
-        Best Places to search<strong>Phones</strong>!
+        Best Place to search <strong>Phones</strong>!
       </h1>
 
       <PhoneList phones={loadedPhones} />

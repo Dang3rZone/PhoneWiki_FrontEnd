@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 
 import Card from '../ui/Card';
-import classes from './MeetupItem.module.css';
+import classes from './PhoneItem.module.css';
 import FavoritesContext from '../../store/favorites-context';
 
 function PhoneItem(props) {
@@ -31,7 +31,7 @@ function PhoneItem(props) {
         </div>
         <div className={classes.content}>
           <h3>{props.name}</h3>
-          <p>{props.price}</p>
+          <p>{props.price}$</p>
           <p>{props.description}</p>
         </div>
         <div className={classes.actions}>

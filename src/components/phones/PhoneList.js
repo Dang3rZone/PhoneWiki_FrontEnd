@@ -1,5 +1,5 @@
 import PhoneItem from './PhoneItem';
-import classes from './MeetupList.module.css';
+import classes from './PhoneList.module.css';
 
 function PhoneList(props) {
   return (
