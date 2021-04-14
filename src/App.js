@@ -1,45 +1,27 @@
-import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.scss';
+import { Route, Switch } from 'react-router-dom';
+import Layout from './components/layout/Layout';
+import './App.css';
 
-import { Container, Row, Col } from 'react-bootstrap';
-import { SearchBox } from './components/search-box/search-box.component';
-import { CardList } from './components/card-list/card-list.component';
+import AllPhonesPage from './pages/AllPhones';
+import FavoritesPage from './pages/Favorites';
+import NewPhonePage from './pages/NewPhone';
 
-class App extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      phones: [],
-      searchField: '',
-    };
-  }
-
-  componentDidMount() {
-    fetch('http://localhost:3000/api/phones')
-      .then((response) => response.json())
-      .then((phones) => this.setState({ phones: phones }));
-  }
-
-  onSearchChange = (event) => {
-    this.setState({ searchField: event.target.value });
-  };
-
-  render() {
-    const { phones, searchField } = this.state;
-    const filteredPhones = phones.filter((phone) =>
-      phone.name.toLowerCase().includes(searchField.toLowerCase())
-    );
-
-    return (
-      <div className="App">
-        <h1>Phones</h1>
-        <SearchBox onSearchChange={this.onSearchChange} />
-        <CardList phones={filteredPhones} />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <Layout>
+      <Switch>
+        <Route path="/" exact>
+          <AllPhonesPage />
+        </Route>
+        <Route path="/new-phone">
+          <NewPhonePage />
+        </Route>
+        <Route path="/favorites">
+          <FavoritesPage />
+        </Route>
+      </Switch>
+    </Layout>
+  );
 }
 
 export default App;
