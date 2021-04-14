@@ -34,7 +34,13 @@ function NewPhoneForm(props) {
       <form action="" className={classes.form} onSubmit={submitHandler}>
         <div className={classes.control}>
           <label htmlFor="name">Name</label>
-          <input type="text" required id="name" ref={nameInputRef} />
+          <input
+            type="text"
+            required
+            id="name"
+            ref={nameInputRef}
+            placeholder="Name of the device"
+          />
         </div>
         <div className={classes.control}>
           <label htmlFor="name">Manufacturer</label>
@@ -43,12 +49,19 @@ function NewPhoneForm(props) {
             required
             id="manufacturer"
             ref={manufacturerInputRef}
+            placeholder="Which company made it"
           />
         </div>
         {/* Image */}
         <div className={classes.control}>
           <label htmlFor="image">Image</label>
-          <input type="url" required id="image" ref={imageInputRef} />
+          <input
+            type="url"
+            required
+            id="image"
+            placeholder="Image Url"
+            ref={imageInputRef}
+          />
         </div>
         {/* price */}
         <div className={classes.control}>

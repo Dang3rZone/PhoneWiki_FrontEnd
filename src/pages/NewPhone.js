@@ -4,7 +4,7 @@ import NewPhoneForm from '../components/phones/NewPhoneForm';
 function NewPhonePage() {
   const history = useHistory();
   function addPhoneHandler(phoneData) {
-    fetch('http://localhost:3000/api/phones/', {
+    fetch('https://nodejs-phonestore-back.herokuapp.com/api/phones', {
       method: 'POST',
       body: JSON.stringify(phoneData),
       headers: {
@@ -16,7 +16,9 @@ function NewPhonePage() {
   }
   return (
     <section>
-      <h1>Add new Phone</h1>
+      <h1>
+        Add a <strong>new</strong> Phone
+      </h1>
       <NewPhoneForm onAddPhone={addPhoneHandler} />
     </section>
   );

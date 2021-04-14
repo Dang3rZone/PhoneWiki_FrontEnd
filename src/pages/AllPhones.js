@@ -7,7 +7,7 @@ function AllPhonesPage() {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch('http://localhost:3000/api/phones')
+    fetch('https://nodejs-phonestore-back.herokuapp.com/api/phones')
       .then((response) => {
         return response.json();
       })

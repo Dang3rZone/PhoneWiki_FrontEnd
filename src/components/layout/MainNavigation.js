@@ -19,7 +19,7 @@ function MainNavigation() {
           </li>
           <li>
             <Link to="/favorites">
-              My Favorites{' '}
+              Cart{' '}
               <span className={classes.badge}>
                 {favoritesCtx.totalFavorites}
               </span>
