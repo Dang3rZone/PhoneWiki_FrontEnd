@@ -16,7 +16,7 @@ function App() {
         <Route path="/new-phone">
           <NewPhonePage />
         </Route>
-        <Route path="/favorites">
+        <Route path="/wishlist">
           <FavoritesPage />
         </Route>
       </Switch>

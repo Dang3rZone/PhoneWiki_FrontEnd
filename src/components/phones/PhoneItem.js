@@ -36,7 +36,7 @@ function PhoneItem(props) {
         </div>
         <div className={classes.actions}>
           <button onClick={toggleFavoriteStatusHandler}>
-            {itemIsFavorite ? 'Remove from Cart' : 'BUY'}
+            {itemIsFavorite ? 'Remove from list' : 'Add to wishlist'}
           </button>
         </div>
       </Card>

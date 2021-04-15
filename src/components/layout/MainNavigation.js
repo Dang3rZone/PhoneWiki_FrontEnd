@@ -18,8 +18,8 @@ function MainNavigation() {
             <Link to="/new-phone">New Phone</Link>
           </li>
           <li>
-            <Link to="/favorites">
-              Cart{' '}
+            <Link to="/wishlist">
+              Wish List{' '}
               <span className={classes.badge}>
                 {favoritesCtx.totalFavorites}
               </span>
