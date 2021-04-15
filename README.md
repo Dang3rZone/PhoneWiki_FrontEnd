@@ -2,7 +2,7 @@ PhoneWiki_FrontEnd
 
 You can try the app here => https://phonewiki.netlify.app
 
-Complete development of a website, including front-end (this), back-end and creation of a database through RestApi. 
+Complete development of a website, including React Front-End (this), Back-End(https://github.com/Dang3rZone/PhoneWiki_BackEnd) and creation of a database through RestApi. 
 
 
 The technologies used are the following:
