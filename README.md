@@ -1,3 +1,19 @@
+PhoneWiki_FrontEnd
+
+###### You can try the app here => phonewiki.netlify.app
+
+Complete development of a website, including front-end (this), back-end and creation of a database through RestApi. 
+
+
+The technologies used are the following:
+
+**Front-end:** React, JavaScript, React-Bootstrap, Sass.
+
+The app is using a deployed mongoDB using ATLAS, if you wish to use your own no-relational DB please change the endpoings.
+
+You can see all the phones in the DB, add a new phone, add phone to your wishlist. More features coming in the future.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
